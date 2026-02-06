@@ -221,9 +221,9 @@ class PrestaShopWebservice
                 version_compare(PrestaShopWebservice::psCompatibleVersionsMin, $headerArray['PSWS-Version']) == 1 ||
                 version_compare(PrestaShopWebservice::psCompatibleVersionsMax, $headerArray['PSWS-Version']) == -1
             ) {
-                throw new PrestaShopWebserviceException(
-                    'This library is not compatible with this version of PrestaShop. Please upgrade/downgrade this library'
-                );
+                //throw new PrestaShopWebserviceException(
+                //    'This library is not compatible with this version of PrestaShop. Please upgrade/downgrade this library'
+                //);
             }
         }
 
